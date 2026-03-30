@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>平和藝術空間 Peace Studios</title>
+<meta name="description" content="平和藝術空間 — 水彩、油畫、素描、兒童美術與成人英語課程。雲林斗六，歡迎預約體驗。">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav>
+  <a href="#" class="nav-logo" data-page="home">
+    平和藝術空間
+    <span>Peace Studios</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#" data-page="courses">課程</a></li>
+    <li><a href="#" data-page="portfolio">作品集</a></li>
+    <li><a href="#" data-page="schedule">時間表</a></li>
+    <li><a href="#" data-page="blog">部落格</a></li>
+    <li><a href="#" data-page="contact">聯絡我們</a></li>
+  </ul>
+  <a href="#" class="nav-cta" data-page="contact">預約體驗</a>
+  <button class="hamburger" id="hamburger" aria-label="選單">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ══ MOBILE MENU ══ -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#" data-page="home">首頁</a>
+  <a href="#" data-page="courses">課程</a>
+  <a href="#" data-page="portfolio">作品集</a>
+  <a href="#" data-page="schedule">時間表</a>
+  <a href="#" data-page="blog">部落格</a>
+  <a href="#" data-page="contact">聯絡我們</a>
+</div>
+
+<!-- ══════════════════════════════════════════
+     HOME PAGE
+══════════════════════════════════════════ -->
+<div class="page" id="page-home">
+
+  <!-- Hero -->
+  <section class="home-hero">
+    <div class="hero-left">
+      <div class="hero-tag reveal">雲林斗六 · 藝術空間</div>
+      <h1 class="hero-title reveal">用畫筆<br>說你的<em>故事</em></h1>
+      <p class="hero-desc reveal">在平和藝術空間，每一筆都是你與世界的對話。<br>水彩、油畫、素描，或是孩子的第一堂美術課——<br>我們在這裡陪你找到屬於自己的顏色。</p>
+      <div class="hero-actions reveal">
+        <a href="#" class="btn btn-dark" data-page="courses">探索課程</a>
+        <a href="#" class="btn btn-outline" data-page="contact">預約體驗課</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <svg class="hero-art" viewBox="0 0 600 700" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <rect width="600" height="700" fill="#C4A882"/>
+        <ellipse cx="300" cy="350" rx="200" ry="220" fill="#D9C4A8" opacity="0.4"/>
+        <ellipse cx="160" cy="200" rx="120" ry="100" fill="#B89A7A" opacity="0.3"/>
+        <ellipse cx="460" cy="520" rx="140" ry="110" fill="#9E7855" opacity="0.25"/>
+        <!-- Canvas frame -->
+        <rect x="120" y="100" width="360" height="460" rx="3" fill="#F5EDE3" opacity="0.9"/>
+        <rect x="140" y="118" width="320" height="310" rx="2" fill="#E8D5B0"/>
+        <!-- Watercolor-style painting -->
+        <ellipse cx="300" cy="220" rx="80" ry="70" fill="#A0785A" opacity="0.55"/>
+        <ellipse cx="260" cy="200" rx="50" ry="60" fill="#7A5C42" opacity="0.45"/>
+        <ellipse cx="340" cy="240" rx="55" ry="50" fill="#9E6B3A" opacity="0.4"/>
+        <ellipse cx="300" cy="270" rx="90" ry="40" fill="#C4A882" opacity="0.5"/>
+        <ellipse cx="220" cy="280" rx="40" ry="50" fill="#5C8C3C" opacity="0.35"/>
+        <ellipse cx="370" cy="265" rx="35" ry="45" fill="#4A7830" opacity="0.3"/>
+        <!-- Water/ground -->
+        <rect x="140" y="330" width="320" height="98" rx="0" fill="#8BB8C8" opacity="0.35"/>
+        <ellipse cx="300" cy="330" rx="160" ry="18" fill="#9BBECE" opacity="0.4"/>
+        <!-- Caption area -->
+        <rect x="155" y="448" width="200" height="10" rx="2" fill="#C4A882" opacity="0.5"/>
+        <rect x="155" y="464" width="130" height="6" rx="2" fill="#C4A882" opacity="0.3"/>
+        <!-- Palette dots -->
+        <circle cx="360" cy="456" r="8" fill="#E05C3A" opacity="0.7"/>
+        <circle cx="378" cy="456" r="8" fill="#D4A820" opacity="0.7"/>
+        <circle cx="396" cy="456" r="8" fill="#4A9E5C" opacity="0.7"/>
+        <circle cx="414" cy="456" r="8" fill="#3A78BE" opacity="0.7"/>
+        <!-- Brushes leaning -->
+        <rect x="490" y="180" width="6" height="140" rx="3" fill="#7A5C42" opacity="0.6" transform="rotate(8,493,250)"/>
+        <rect x="505" y="190" width="5" height="130" rx="3" fill="#5C3A20" opacity="0.5" transform="rotate(12,507,255)"/>
+        <ellipse cx="494" cy="185" rx="6" ry="10" fill="#D4A820" opacity="0.7" transform="rotate(8,493,250)"/>
+        <ellipse cx="509" cy="194" rx="5" ry="9" fill="#E05C3A" opacity="0.6" transform="rotate(12,507,255)"/>
+      </svg>
+      <div class="hero-badge">
+        <div class="num">8+</div>
+        <div class="lbl">年陪伴學員成長</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="home-intro">
+    <div class="intro-grid">
+      <div>
+        <blockquote class="intro-quote reveal">
+          「藝術不是天才的專利，<br>而是每個人都值得擁有的語言。」
+          <span>— 平和藝術空間</span>
+        </blockquote>
+      </div>
+      <div class="intro-text">
+        <p class="reveal">平和藝術空間成立於雲林斗六，相信每一個人都有創作的能力與渴望。無論你是第一次拿起畫筆的孩子，還是想在繁忙生活中找回寧靜的大人，這裡都是你的所在。</p>
+        <p class="reveal">我們提供水彩、油畫、素描速寫、兒童美術與成人英語等課程，由專業且富有熱情的老師帶領，讓學習成為一件溫暖而有意義的事。</p>
+        <div class="stats-row reveal">
+          <div class="stat"><div class="n">150+</div><div class="l">在籍學員</div></div>
+          <div class="stat"><div class="n">5</div><div class="l">門精選課程</div></div>
+          <div class="stat"><div class="n">2</div><div class="l">位專業老師</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Preview -->
+  <section class="courses-preview">
+    <div class="section-label reveal">我們的課程</div>
+    <h2 class="section-title reveal">找到屬於你的畫</h2>
+    <p class="section-sub reveal">從兒童到成人，從入門到進階，每一堂課都是量身設計的創作旅程。</p>
+    <div class="courses-grid reveal">
+      <div class="course-item">
+        <div class="course-num">01</div>
+        <div class="course-name">水彩班</div>
+        <p class="course-desc">從透明水感到豐富層次，掌握水與色的平衡。學習基礎渲染、濕畫法與細節描繪，感受水彩獨有的輕盈詩意。</p>
+        <div class="course-tags">
+          <span class="tag tag-age">全年齡</span>
+          <span class="tag tag-level">入門 / 進階</span>
+        </div>
+      </div>
+      <div class="course-item">
+        <div class="course-num">02</div>
+        <div class="course-name">油畫班</div>
+        <p class="course-desc">厚實的質感與豐富的色彩深度，用油彩表現視覺語言的重量。適合想要深入探索繪畫媒材的成人學員。</p>
+        <div class="course-tags">
+          <span class="tag tag-age">成人</span>
+          <span class="tag tag-level">入門 / 進階</span>
+        </div>
+      </div>
+      <div class="course-item">
+        <div class="course-num">03</div>
+        <div class="course-name">素描速寫</div>
+        <p class="course-desc">觀察與線條的基礎訓練，所有繪畫的根基。學習比例、明暗與空間感，建立扎實的造形能力。</p>
+        <div class="course-tags">
+          <span class="tag tag-age">全年齡</span>
+          <span class="tag tag-level">入門</span>
+        </div>
+      </div>
+      <div class="course-item">
+        <div class="course-num">04</div>
+        <div class="course-name">兒童美術</div>
+        <p class="course-desc">以遊戲啟發創意，讓孩子在色彩中自由表達。課程設計尊重每個孩子的節奏，培養觀察力與審美感知。</p>
+        <div class="course-tags">
+          <span class="tag tag-age">4–12 歲</span>
+          <span class="tag tag-level">分齡教學</span>
+        </div>
+      </div>
+      <div class="course-item">
+        <div class="course-num">05</div>
+        <div class="course-name">成人英語</div>
+        <p class="course-desc">以藝術為橋梁，在輕鬆氛圍中學習生活英語。結合創作主題，讓語言學習更有溫度與記憶點。</p>
+        <div class="course-tags">
+          <span class="tag tag-age">成人</span>
+          <span class="tag tag-level">生活英語</span>
+        </div>
+      </div>
+      <div class="course-item" style="display:flex;align-items:center;justify-content:center;cursor:pointer;" onclick="showPage('courses')">
+        <div style="text-align:center;color:var(--text-muted);">
+          <div style="font-size:32px;font-family:'Cormorant Garamond',serif;font-style:italic;margin-bottom:0.5rem;">→</div>
+          <div style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase;">查看完整課程</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Gallery Strip -->
+  <section class="gallery-strip">
+    <div class="section-label reveal">作品集精選</div>
+    <h2 class="section-title reveal">學員的畫，最真實的成果</h2>
+    <p class="section-sub reveal">每一幅作品背後，都是一段成長的故事。</p>
+    <div class="gallery-grid reveal">
+      <div class="gallery-item tall" style="min-height:320px;">
+        <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" style="height:100%;position:absolute;inset:0;">
+          <rect width="300" height="400" fill="#C8D8E8"/>
+          <rect x="0" y="260" width="300" height="140" fill="#9BB8C8"/>
+          <ellipse cx="150" cy="260" rx="180" ry="40" fill="#D4E8F4" opacity="0.8"/>
+          <ellipse cx="80" cy="240" rx="80" ry="50" fill="#E8F4FA" opacity="0.9"/>
+          <ellipse cx="220" cy="230" rx="100" ry="60" fill="#BDDCEC" opacity="0.9"/>
+          <ellipse cx="40" cy="200" rx="50" ry="35" fill="#F0F8FC" opacity="0.8"/>
+          <circle cx="150" cy="80" r="45" fill="#F5E87A" opacity="0.7"/>
+          <circle cx="150" cy="80" r="38" fill="#F0D840" opacity="0.5"/>
+        </svg>
+        <div class="gallery-overlay"><span class="gallery-label">水彩風景</span></div>
+      </div>
+      <div class="gallery-item" style="min-height:155px;">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:absolute;inset:0;">
+          <rect width="200" height="200" fill="#D9C4A8"/>
+          <ellipse cx="100" cy="90" rx="60" ry="56" fill="#A0785A" opacity="0.7"/>
+          <ellipse cx="76" cy="80" rx="28" ry="36" fill="#7A5C42" opacity="0.6"/>
+          <ellipse cx="118" cy="100" rx="32" ry="28" fill="#C4844A" opacity="0.5"/>
+          <rect x="40" y="140" width="120" height="16" rx="2" fill="#B89A7A" opacity="0.5"/>
+        </svg>
+        <div class="gallery-overlay"><span class="gallery-label">油畫靜物</span></div>
+      </div>
+      <div class="gallery-item" style="min-height:155px;">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:absolute;inset:0;">
+          <rect width="200" height="200" fill="#F0E8D8"/>
+          <circle cx="100" cy="90" r="44" fill="#E8A878" opacity="0.7"/>
+          <circle cx="100" cy="84" r="32" fill="#D4845A" opacity="0.5"/>
+          <ellipse cx="86" cy="80" rx="10" ry="14" fill="#3D2B1A" opacity="0.7"/>
+          <ellipse cx="116" cy="80" rx="10" ry="14" fill="#3D2B1A" opacity="0.7"/>
+          <path d="M 86 100 Q 100 112 114 100" stroke="#3D2B1A" stroke-width="2" fill="none" opacity="0.7"/>
+          <ellipse cx="100" cy="60" rx="28" ry="14" fill="#C47840" opacity="0.4"/>
+        </svg>
+        <div class="gallery-overlay"><span class="gallery-label">人物速寫</span></div>
+      </div>
+      <div class="gallery-item" style="min-height:155px;">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:absolute;inset:0;">
+          <rect width="200" height="200" fill="#E8D5B0"/>
+          <rect x="60" y="50" width="80" height="110" rx="3" fill="#C4A070"/>
+          <rect x="76" y="66" width="48" height="40" rx="2" fill="#F5EDD8"/>
+          <rect x="86" y="136" width="28" height="22" rx="2" fill="#9E7855"/>
+          <ellipse cx="100" cy="46" rx="36" ry="30" fill="#5C8C3C" opacity="0.75"/>
+          <ellipse cx="84" cy="38" rx="20" ry="24" fill="#4A7830" opacity="0.6"/>
+          <ellipse cx="116" cy="40" rx="18" ry="20" fill="#3A6220" opacity="0.5"/>
+        </svg>
+        <div class="gallery-overlay"><span class="gallery-label">兒童美術</span></div>
+      </div>
+    </div>
+    <div style="margin-top:2rem;text-align:right;">
+      <a href="#" class="btn btn-outline" data-page="portfolio">查看全部作品 →</a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="section-label reveal">學員回饋</div>
+    <h2 class="section-title reveal">他們說的話</h2>
+    <div class="testimonials-grid" style="margin-top:2.5rem;">
+      <div class="testi-card reveal">
+        <p class="testi-text">「第一次拿起水彩筆，老師很有耐心地帶著我，從混色到構圖，一步步找到了畫畫的節奏。現在週二是我最期待的日子。」</p>
+        <div class="testi-author">陳雅婷</div>
+        <div class="testi-course">水彩班 · 入門</div>
+      </div>
+      <div class="testi-card reveal">
+        <p class="testi-text">「孩子以前不太願意表達，來上了兒童美術之後，回家會主動跟我們說他畫了什麼、為什麼選那個顏色，整個人開朗很多。」</p>
+        <div class="testi-author">林俊宏（家長）</div>
+        <div class="testi-course">兒童美術 · 6 歲</div>
+      </div>
+      <div class="testi-card reveal">
+        <p class="testi-text">「油畫課讓我重新認識自己。下筆的時候什麼都不想，只有顏色和光線。這種專注的感覺，是我很久沒有過的奢侈。」</p>
+        <div class="testi-author">吳明德</div>
+        <div class="testi-course">油畫班 · 進階</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="background:var(--cream);text-align:center;padding:5rem 3rem;">
+    <div class="section-label reveal">開始你的創作旅程</div>
+    <h2 class="section-title reveal" style="max-width:480px;margin:0 auto 1rem;">準備好拿起畫筆了嗎？</h2>
+    <p class="section-sub reveal" style="margin:0 auto 2.5rem;">第一堂體驗課，讓我們一起感受創作的溫度。</p>
+    <a href="#" class="btn btn-dark reveal" data-page="contact">預約免費體驗課</a>
+  </section>
+
+  <div class="divider"></div>
+</div>
+<!-- END HOME -->
+
+
+<!-- ══════════════════════════════════════════
+     COURSES PAGE
+══════════════════════════════════════════ -->
+<div class="page" id="page-courses">
+  <div class="page-hero">
+    <div class="label">我們的課程</div>
+    <h1>找到屬於你的畫<br><span class="serif-italic" style="font-size:0.6em;color:var(--brown);">Five courses, one space</span></h1>
+  </div>
+  <section>
+    <div class="courses-list">
+      <div class="course-row reveal">
+        <div class="course-row-num">01</div>
+        <div>
+          <div class="course-row-title">水彩班</div>
+          <p class="course-row-desc">從透明水感到豐富層次，掌握水與色的平衡之道。課程涵蓋基礎渲染、濕畫法、乾濕混合技法，以及風景、靜物、植物等主題創作。每週 2 堂，適合完全入門或有基礎想精進的學員。</p>
+          <div class="course-row-meta">
+            <span class="tag tag-age">全年齡</span>
+            <span class="tag tag-level">入門 / 進階分班</span>
+            <span class="tag tag-level">週二 · 週四 14:00–16:00</span>
+          </div>
+        </div>
+        <div class="course-row-action">
+          <a href="#" class="btn btn-outline" data-page="contact">詢問報名</a>
+        </div>
+      </div>
+      <div class="course-row reveal">
+        <div class="course-row-num">02</div>
+        <div>
+          <div class="course-row-title">油畫班</div>
+          <p class="course-row-desc">厚實的質感與豐富的色彩深度，是許多人心中「真正繪畫」的起點。學習調色、打底、罩染與厚塗技法，以及油畫媒材的基本保養與修改方式。每週 1 堂長課，適合成人學員深度投入。</p>
+          <div class="course-row-meta">
+            <span class="tag tag-age">成人</span>
+            <span class="tag tag-level">入門 / 進階</span>
+            <span class="tag tag-level">週六 10:00–13:00</span>
+          </div>
+        </div>
+        <div class="course-row-action">
+          <a href="#" class="btn btn-outline" data-page="contact">詢問報名</a>
+        </div>
+      </div>
+      <div class="course-row reveal">
+        <div class="course-row-num">03</div>
+        <div>
+          <div class="course-row-title">素描速寫</div>
+          <p class="course-row-desc">觀察與線條是一切繪畫的根基。課程從基本幾何形體出發，進入人物、靜物、空間透視等主題，建立扎實的造形觀察力。速寫訓練帶你走出教室，記錄生活中的靈光一閃。</p>
+          <div class="course-row-meta">
+            <span class="tag tag-age">全年齡</span>
+            <span class="tag tag-level">入門</span>
+            <span class="tag tag-level">週一 · 週三 19:00–21:00</span>
+          </div>
+        </div>
+        <div class="course-row-action">
+          <a href="#" class="btn btn-outline" data-page="contact">詢問報名</a>
+        </div>
+      </div>
+      <div class="course-row reveal">
+        <div class="course-row-num">04</div>
+        <div>
+          <div class="course-row-title">兒童美術</div>
+          <p class="course-row-desc">以遊戲啟發創意，讓孩子在色彩中自由表達。課程設計尊重每個孩子的發展節奏，透過主題創作培養觀察力、專注力與審美感知。分齡教學（4–7 歲 / 8–12 歲），小班制確保每位孩子都被看見。</p>
+          <div class="course-row-meta">
+            <span class="tag tag-age">4–12 歲</span>
+            <span class="tag tag-level">分齡小班制</span>
+            <span class="tag tag-level">週六 · 週日 09:30–11:00</span>
+          </div>
+        </div>
+        <div class="course-row-action">
+          <a href="#" class="btn btn-outline" data-page="contact">詢問報名</a>
+        </div>
+      </div>
+      <div class="course-row reveal">
+        <div class="course-row-num">05</div>
+        <div>
+          <div class="course-row-title">成人英語</div>
+          <p class="course-row-desc">以藝術為橋梁，在輕鬆氛圍中學習生活英語。每堂課圍繞一個創作主題展開對話與練習，讓語言學習不再是背單字，而是真實的溝通體驗。適合有基礎英語底子、想重拾開口自信的成人。</p>
+          <div class="course-row-meta">
+            <span class="tag tag-age">成人</span>
+            <span class="tag tag-level">生活英語</span>
+            <span class="tag tag-level">時間請洽詢</span>
+          </div>
+        </div>
+        <div class="course-row-action">
+          <a href="#" class="btn btn-outline" data-page="contact">詢問報名</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+</div>
+<!-- END COURSES -->
+
+
+<!-- ══════════════════════════════════════════
+     PORTFOLIO PAGE
+══════════════════════════════════════════ -->
+<div class="page" id="page-portfolio">
+  <div class="page-hero">
+    <div class="label">學員作品集</div>
+    <h1>每一筆都是<br><span class="serif-italic" style="font-size:0.6em;color:var(--brown);">一段真實的旅程</span></h1>
+  </div>
+  <section>
+    <div class="portfolio-filter reveal">
+      <button class="filter-btn active" data-filter="all">全部</button>
+      <button class="filter-btn" data-filter="watercolor">水彩</button>
+      <button class="filter-btn" data-filter="oil">油畫</button>
+      <button class="filter-btn" data-filter="sketch">素描速寫</button>
+      <button class="filter-btn" data-filter="kids">兒童美術</button>
+    </div>
+    <div class="portfolio-grid">
+      <!-- Watercolor works -->
+      <div class="portfolio-item reveal" data-cat="watercolor">
+        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="#C8D8E8"/><rect x="0" y="200" width="400" height="100" fill="#9BB8C8"/><ellipse cx="200" cy="200" rx="240" ry="50" fill="#D4E8F4" opacity="0.8"/><ellipse cx="100" cy="170" rx="100" ry="60" fill="#E8F4FA" opacity="0.9"/><ellipse cx="290" cy="160" rx="130" ry="70" fill="#BDDCEC" opacity="0.9"/><circle cx="200" cy="60" r="50" fill="#F5E87A" opacity="0.65"/></svg>
+        <div class="pi-overlay"><div class="pi-cat">水彩</div><div class="pi-title">黃昏湖景</div></div>
+      </div>
+      <div class="portfolio-item reveal" data-cat="watercolor">
+        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="#E8F0D8"/><ellipse cx="200" cy="200" rx="160" ry="80" fill="#A0C878" opacity="0.4"/><ellipse cx="200" cy="140" rx="60" ry="80" fill="#D4E8A0" opacity="0.7"/><ellipse cx="160" cy="120" rx="40" ry="60" fill="#B8D878" opacity="0.6"/><ellipse cx="240" cy="130" rx="50" ry="55" fill="#98C058" opacity="0.5"/><rect x="185" y="200" width="30" height="70" rx="4" fill="#7A5C42" opacity="0.6"/></svg>
+        <div class="pi-overlay"><div class="pi-cat">水彩</div><div class="pi-title">庭院樹影</div></div>
+      </div>
+      <div class="portfolio-item reveal" data-cat="watercolor">
+        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="#F8E8D8"/><ellipse cx="160" cy="160" rx="70" ry="80" fill="#F4A0A0" opacity="0.6"/><ellipse cx="240" cy="150" rx="60" ry="70" fill="#F87878" opacity="0.4"/><ellipse cx="200" cy="140" rx="50" ry="60" fill="#E85050" opacity="0.3"/><ellipse cx="160" cy="200" rx="50" ry="30" fill="#88A840" opacity="0.5"/><ellipse cx="240" cy="210" rx="40" ry="25" fill="#70902A" opacity="0.4"/></svg>
+        <div class="pi-overlay"><div class="pi-cat">水彩</div><div class="pi-title">玫瑰靜物</div></div>
+      </div>
+      <!-- Oil works -->
+      <div class="portfolio-item reveal" data-cat="oil">
+        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="#2A1A0A"/><rect x="0" y="200" width="400" height="100" fill="#1A0A00"/><ellipse cx="200" cy="220" rx="200" ry="40" fill="#3A2010" opacity="0.8"/><circle cx="200" cy="80" r="60" fill="#F0C040" opacity="0.8"/><circle cx="200" cy="80" r="50" fill="#F8D860" opacity="0.6"/><ellipse cx="200" cy="160" rx="30" ry="80" fill="#C07020" opacity="0.6"/><ellipse cx="160" cy="180" rx="20" ry="60" fill="#A05010" opacity="0.5"/><ellipse cx="240" cy="175" rx="18" ry="65" fill="#B06020" opacity="0.4"/></svg>
+        <div class="pi-overlay"><div class="pi-cat">油畫</div><div class="pi-title">夜晚燈火</div></div>
+      </div>
+      <div class="portfolio-item reveal" data-cat="oil">
+        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="#D9C4A8"/><ellipse cx="200" cy="150" rx="100" ry="90" fill="#A0785A" opacity="0.7"/><ellipse cx="160" cy="130" rx="55" ry="70" fill="#7A5C42" opacity="0.6"/><ellipse cx="240" cy="160" rx="60" ry="65" fill="#9E6B3A" opacity="0.5"/><ellipse cx="200" cy="190" rx="90" ry="35" fill="#C4A882" opacity="0.6"/></svg>
+        <div class="pi-overlay"><div class="pi-cat">油畫</div><div class="pi-title">陶器靜物</div></div>
+      </div>
+      <!-- Sketch works -->
+      <div class="portfolio-item reveal" data-cat="sketch">
+        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="#F5F0E8"/><circle cx="200" cy="110" r="50" fill="none" stroke="#3D2B1A" stroke-width="1.5" opacity="0.7"/><ellipse cx="200" cy="100" rx="20" ry="28" fill="none" stroke="#3D2B1A" stroke-width="1" opacity="0.6"/><ellipse cx="178" cy="98" rx="8" ry="12" fill="#3D2B1A" opacity="0.6"/><ellipse cx="222" cy="98" rx="8" ry="12" fill="#3D2B1A" opacity="0.6"/><path d="M 180 122 Q 200 134 220 122" stroke="#3D2B1A" stroke-width="1.5" fill="none" opacity="0.7"/><line x1="200" y1="160" x2="200" y2="240" stroke="#3D2B1A" stroke-width="1.5" opacity="0.5"/><line x1="200" y1="185" x2="160" y2="210" stroke="#3D2B1A" stroke-width="1.5" opacity="0.5"/><line x1="200" y1="185" x2="240" y2="210" stroke="#3D2B1A" stroke-width="1.5" opacity="0.5"/><line x1="200" y1="240" x2="175" y2="280" stroke="#3D2B1A" stroke-width="1.5" opacity="0.5"/><line x1="200" y1="240" x2="225" y2="280" stroke="#3D2B1A" stroke-width="1.5" opacity="0.5"/></svg>
+        <div class="pi-overlay"><div class="pi-cat">素描</div><div class="pi-title">人物速寫</div></div>
+      </div>
+      <!-- Kids works -->
+      <div class="portfolio-item reveal" data-cat="kids">
+        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="#FFF8E8"/><circle cx="200" cy="100" r="55" fill="#F8D860" opacity="0.9"/><circle cx="178" cy="88" r="8" fill="#3D2B1A" opacity="0.8"/><circle cx="222" cy="88" r="8" fill="#3D2B1A" opacity="0.8"/><path d="M 178 115 Q 200 130 222 115" stroke="#3D2B1A" stroke-width="3" fill="none"/><rect x="170" y="160" width="60" height="80" rx="8" fill="#E05C3A" opacity="0.8"/><rect x="120" y="170" width="50" height="12" rx="6" fill="#F8A060" opacity="0.8"/><rect x="230" y="170" width="50" height="12" rx="6" fill="#F8A060" opacity="0.8"/><rect x="180" y="240" width="18" height="40" rx="4" fill="#3A6AC4" opacity="0.8"/><rect x="202" y="240" width="18" height="40" rx="4" fill="#3A6AC4" opacity="0.8"/><ellipse cx="120" cy="80" rx="20" ry="16" fill="#F05050" opacity="0.7"/><ellipse cx="280" cy="80" rx="24" ry="18" fill="#F8D020" opacity="0.7"/><ellipse cx="100" cy="200" rx="28" ry="20" fill="#50C050" opacity="0.6"/></svg>
+        <div class="pi-overlay"><div class="pi-cat">兒童美術</div><div class="pi-title">我的家人</div></div>
+      </div>
+      <div class="portfolio-item reveal" data-cat="kids">
+        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="#E8F8E8"/><rect x="0" y="220" width="400" height="80" fill="#90C870" opacity="0.7"/><ellipse cx="200" cy="220" rx="200" ry="30" fill="#70A850" opacity="0.4"/><rect x="160" y="100" width="80" height="120" rx="4" fill="#E85030" opacity="0.8"/><rect x="140" y="80" width="120" height="30" rx="3" fill="#A02010" opacity="0.7"/><rect x="185" y="160" width="30" height="60" rx="3" fill="#8B5A2B" opacity="0.7"/><rect x="175" y="130" width="20" height="20" rx="2" fill="#88CCF8" opacity="0.8"/><circle cx="90" cy="90" r="40" fill="#F8E040" opacity="0.8"/><ellipse cx="140" cy="200" rx="20" ry="30" fill="#50A830" opacity="0.7"/><ellipse cx="280" cy="190" rx="18" ry="35" fill="#408820" opacity="0.7"/></svg>
+        <div class="pi-overlay"><div class="pi-cat">兒童美術</div><div class="pi-title">我的家</div></div>
+      </div>
+      <div class="portfolio-item reveal" data-cat="oil">
+        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="#1A2A3A"/><rect x="0" y="200" width="400" height="100" fill="#102030"/><ellipse cx="200" cy="220" rx="300" ry="60" fill="#1A3A5A" opacity="0.7"/><ellipse cx="200" cy="220" rx="200" ry="40" fill="#2A5A8A" opacity="0.5"/><ellipse cx="200" cy="200" rx="180" ry="30" fill="#4A8AB8" opacity="0.4"/><circle cx="200" cy="100" r="35" fill="#F8F0D0" opacity="0.85"/><circle cx="200" cy="100" r="28" fill="#F8E8A0" opacity="0.6"/><ellipse cx="200" cy="200" rx="30" ry="80" fill="#D0A820" opacity="0.4"/></svg>
+        <div class="pi-overlay"><div class="pi-cat">油畫</div><div class="pi-title">月夜</div></div>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+</div>
+<!-- END PORTFOLIO -->
+
+
+<!-- ══════════════════════════════════════════
+     SCHEDULE PAGE
+══════════════════════════════════════════ -->
+<div class="page" id="page-schedule">
+  <div class="page-hero">
+    <div class="label">課程時間表</div>
+    <h1>找到你的時段<br><span class="serif-italic" style="font-size:0.6em;color:var(--brown);">Every week, a new beginning</span></h1>
+  </div>
+  <section>
+    <div class="schedule-wrap reveal">
+      <div class="schedule-tabs">
+        <button class="stab active" data-tab="weekly">每週課程</button>
+        <button class="stab" data-tab="olivia">Olivia 老師</button>
+        <button class="stab" data-tab="eric">Eric 老師</button>
+      </div>
+
+      <div class="schedule-panel active" id="panel-weekly">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>課程</th>
+              <th>星期</th>
+              <th>時間</th>
+              <th>老師</th>
+              <th>對象</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="tc tc-wc">水彩</span></td><td>週二、週四</td><td>14:00 – 16:00</td><td>Olivia</td><td>全年齡</td></tr>
+            <tr><td><span class="tc tc-oil">油畫</span></td><td>週六</td><td>10:00 – 13:00</td><td>Eric</td><td>成人</td></tr>
+            <tr><td><span class="tc tc-sk">素描速寫</span></td><td>週一、週三</td><td>19:00 – 21:00</td><td>Eric</td><td>全年齡</td></tr>
+            <tr><td><span class="tc tc-kids">兒童美術（幼齡）</span></td><td>週六</td><td>09:30 – 11:00</td><td>Olivia</td><td>4–7 歲</td></tr>
+            <tr><td><span class="tc tc-kids">兒童美術（高齡）</span></td><td>週日</td><td>09:30 – 11:00</td><td>Olivia</td><td>8–12 歲</td></tr>
+            <tr><td><span class="tc tc-en">成人英語</span></td><td>請洽詢</td><td>請洽詢</td><td>Olivia</td><td>成人</td></tr>
+          </tbody>
+        </table>
+        <p class="price-note">📌 各課程費用與名額請直接聯絡我們詢問。體驗課歡迎預約，部分課程提供試聽。</p>
+      </div>
+
+      <div class="schedule-panel" id="panel-olivia">
+        <table class="schedule-table">
+          <thead>
+            <tr><th>課程</th><th>星期</th><th>時間</th><th>對象</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="tc tc-wc">水彩</span></td><td>週二、週四</td><td>14:00 – 16:00</td><td>全年齡</td></tr>
+            <tr><td><span class="tc tc-kids">兒童美術（幼齡）</span></td><td>週六</td><td>09:30 – 11:00</td><td>4–7 歲</td></tr>
+            <tr><td><span class="tc tc-kids">兒童美術（高齡）</span></td><td>週日</td><td>09:30 – 11:00</td><td>8–12 歲</td></tr>
+            <tr><td><span class="tc tc-en">成人英語</span></td><td>請洽詢</td><td>請洽詢</td><td>成人</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="schedule-panel" id="panel-eric">
+        <table class="schedule-table">
+          <thead>
+            <tr><th>課程</th><th>星期</th><th>時間</th><th>對象</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="tc tc-oil">油畫</span></td><td>週六</td><td>10:00 – 13:00</td><td>成人</td></tr>
+            <tr><td><span class="tc tc-sk">素描速寫</span></td><td>週一、週三</td><td>19:00 – 21:00</td><td>全年齡</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+</div>
+<!-- END SCHEDULE -->
+
+
+<!-- ══════════════════════════════════════════
+     BLOG PAGE
+══════════════════════════════════════════ -->
+<div class="page" id="page-blog">
+  <div class="page-hero">
+    <div class="label">部落格</div>
+    <h1>畫室裡的<br><span class="serif-italic" style="font-size:0.6em;color:var(--brown);">日常與故事</span></h1>
+  </div>
+  <section>
+    <div class="blog-grid">
+      <div class="blog-card reveal">
+        <div class="blog-thumb">
+          <svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;"><rect width="640" height="360" fill="#C8D8E8"/><rect x="0" y="260" width="640" height="100" fill="#9BB8C8"/><ellipse cx="320" cy="260" rx="360" ry="60" fill="#D4E8F4" opacity="0.8"/><ellipse cx="140" cy="220" rx="140" ry="80" fill="#E8F4FA" opacity="0.9"/><circle cx="320" cy="80" r="55" fill="#F5E87A" opacity="0.65"/></svg>
+        </div>
+        <div class="blog-cat">學員故事</div>
+        <h3 class="blog-title">五十歲才開始畫畫——阿姨的水彩旅程</h3>
+        <p class="blog-excerpt">「我以為畫畫是年輕人的事。」第一次走進畫室的時候，她這樣說。一年後，她的作品掛在了我們的展覽牆上。</p>
+        <div class="blog-meta">2026 年 2 月 · Olivia</div>
+      </div>
+      <div class="blog-card reveal">
+        <div class="blog-thumb">
+          <svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;"><rect width="640" height="360" fill="#F0E8D8"/><rect x="180" y="60" width="280" height="240" rx="4" fill="#C4A070"/><rect x="210" y="85" width="220" height="160" rx="3" fill="#F5EDD8"/><ellipse cx="320" cy="120" rx="70" ry="60" fill="#E85030" opacity="0.6"/><ellipse cx="280" cy="110" rx="40" ry="50" fill="#C03010" opacity="0.5"/></svg>
+        </div>
+        <div class="blog-cat">教學筆記</div>
+        <h3 class="blog-title">油畫入門：打底劑的選擇與使用方式</h3>
+        <p class="blog-excerpt">很多初學者在選擇畫布和打底劑時感到困惑。Eric 老師整理了一份實用筆記，幫你在開始之前做好準備。</p>
+        <div class="blog-meta">2026 年 1 月 · Eric</div>
+      </div>
+      <div class="blog-card reveal">
+        <div class="blog-thumb">
+          <svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;"><rect width="640" height="360" fill="#FFF8E8"/><circle cx="220" cy="160" r="80" fill="#F8D860" opacity="0.9"/><circle cx="200" cy="148" r="12" fill="#3D2B1A" opacity="0.8"/><circle cx="240" cy="148" r="12" fill="#3D2B1A" opacity="0.8"/><path d="M 196 178 Q 220 198 244 178" stroke="#3D2B1A" stroke-width="4" fill="none"/><rect x="340" y="80" width="200" height="200" rx="8" fill="#E05C3A" opacity="0.7"/><rect x="380" y="120" width="120" height="120" rx="5" fill="#F8A060" opacity="0.5"/></svg>
+        </div>
+        <div class="blog-cat">上課花絮</div>
+        <h3 class="blog-title">2025 年度兒童美術成果展——孩子們說的故事</h3>
+        <p class="blog-excerpt">三十幅作品，三十個故事。今年的成果展讓每位家長都紅了眼眶。我們把現場的感動記錄下來。</p>
+        <div class="blog-meta">2025 年 12 月 · Olivia</div>
+      </div>
+      <div class="blog-card reveal">
+        <div class="blog-thumb">
+          <svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;"><rect width="640" height="360" fill="#E8F0E0"/><ellipse cx="320" cy="250" rx="280" ry="90" fill="#90C870" opacity="0.5"/><ellipse cx="320" cy="200" rx="90" ry="120" fill="#D4E8A0" opacity="0.7"/><ellipse cx="240" cy="180" rx="60" ry="90" fill="#B8D878" opacity="0.65"/><ellipse cx="400" cy="185" rx="70" ry="85" fill="#98C058" opacity="0.55"/><rect x="298" y="290" width="44" height="50" rx="5" fill="#7A5C42" opacity="0.6"/></svg>
+        </div>
+        <div class="blog-cat">速寫日記</div>
+        <h3 class="blog-title">帶著速寫本去旅行——斗六老街的下午</h3>
+        <p class="blog-excerpt">素描課的戶外寫生日。我們在老街的樹蔭下坐了整個下午，用線條記錄那些即將消失的屋簷與光影。</p>
+        <div class="blog-meta">2025 年 11 月 · Eric</div>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+</div>
+<!-- END BLOG -->
+
+
+<!-- ══════════════════════════════════════════
+     CONTACT PAGE
+══════════════════════════════════════════ -->
+<div class="page" id="page-contact">
+  <div class="page-hero">
+    <div class="label">聯絡我們</div>
+    <h1>讓我們<br><span class="serif-italic" style="font-size:0.6em;color:var(--brown);">一起開始</span></h1>
+  </div>
+  <section>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h3>來找我們</h3>
+        <div class="contact-detail">
+          <div class="cd-item">
+            <div class="cd-label">地址</div>
+            雲林縣斗六市（詳細地址請洽詢）
+          </div>
+          <div class="cd-item">
+            <div class="cd-label">開放時間</div>
+            週一至週五：12:00 – 21:00<br>
+            週六、週日：09:00 – 17:00
+          </div>
+          <div class="cd-item">
+            <div class="cd-label">LINE</div>
+            @peacestudios（請加好友詢問）
+          </div>
+          <div class="cd-item">
+            <div class="cd-label">Email</div>
+            hello@peacestudios.tw
+          </div>
+        </div>
+        <div class="map-placeholder">地圖嵌入區（可加入 Google Maps）</div>
+      </div>
+      <div class="reveal">
+        <h3 style="font-family:'Playfair Display',serif;font-size:22px;color:var(--dark-brown);margin-bottom:1.5rem;font-weight:400;">預約或詢問</h3>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>姓名</label>
+              <input type="text" placeholder="王小明" required>
+            </div>
+            <div class="form-group">
+              <label>聯絡電話</label>
+              <input type="tel" placeholder="09XX-XXX-XXX">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>LINE ID 或 Email</label>
+            <input type="text" placeholder="line123 / hello@mail.com">
+          </div>
+          <div class="form-group">
+            <label>想了解的課程</label>
+            <select>
+              <option value="">請選擇</option>
+              <option>水彩班</option>
+              <option>油畫班</option>
+              <option>素描速寫</option>
+              <option>兒童美術</option>
+              <option>成人英語</option>
+              <option>其他 / 不確定</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>留言（選填）</label>
+            <textarea placeholder="有任何問題或想說的話，都歡迎告訴我們 :)"></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark" style="margin-top:0.5rem;">送出</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+</div>
+<!-- END CONTACT -->
+
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="name">平和藝術空間</div>
+      <div class="tagline">Peace Studios</div>
+      <p>在雲林斗六，一個讓你慢下來、拿起畫筆的地方。</p>
+    </div>
+    <div class="footer-col">
+      <h4>課程</h4>
+      <ul>
+        <li><a href="#" data-page="courses">水彩班</a></li>
+        <li><a href="#" data-page="courses">油畫班</a></li>
+        <li><a href="#" data-page="courses">素描速寫</a></li>
+        <li><a href="#" data-page="courses">兒童美術</a></li>
+        <li><a href="#" data-page="courses">成人英語</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>探索</h4>
+      <ul>
+        <li><a href="#" data-page="portfolio">作品集</a></li>
+        <li><a href="#" data-page="schedule">時間表</a></li>
+        <li><a href="#" data-page="blog">部落格</a></li>
+        <li><a href="#" data-page="contact">聯絡我們</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 平和藝術空間 Peace Studios · 雲林斗六</p>
+    <p>以藝術為名，記錄生命的色彩</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
