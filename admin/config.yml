@@ -1,0 +1,129 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+locale: "zh_Hant"
+
+collections:
+
+  # ── 部落格文章 ──
+  - name: "blog"
+    label: "部落格文章"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "標題", name: "title", widget: "string" }
+      - { label: "發佈日期", name: "date", widget: "datetime" }
+      - label: "分類"
+        name: "category"
+        widget: "select"
+        options:
+          - { label: "學員故事", value: "學員故事" }
+          - { label: "教學筆記", value: "教學筆記" }
+          - { label: "上課花絮", value: "上課花絮" }
+          - { label: "速寫日記", value: "速寫日記" }
+      - label: "作者"
+        name: "author"
+        widget: "select"
+        options:
+          - { label: "Olivia", value: "Olivia" }
+          - { label: "Eric", value: "Eric" }
+      - { label: "封面圖片", name: "thumbnail", widget: "image", required: false }
+      - { label: "文章摘要", name: "excerpt", widget: "text" }
+      - { label: "文章內容", name: "body", widget: "markdown" }
+
+  # ── 課程資訊 ──
+  - name: "courses"
+    label: "課程資訊"
+    files:
+      - label: "水彩班"
+        name: "watercolor"
+        file: "_data/course_watercolor.yml"
+        fields:
+          - { label: "課程名稱", name: "title", widget: "string" }
+          - { label: "課程說明", name: "description", widget: "text" }
+          - { label: "適合對象", name: "audience", widget: "string" }
+          - { label: "程度", name: "level", widget: "string" }
+          - { label: "上課時間", name: "schedule", widget: "string" }
+          - { label: "費用說明", name: "price", widget: "string" }
+      - label: "油畫班"
+        name: "oil"
+        file: "_data/course_oil.yml"
+        fields:
+          - { label: "課程名稱", name: "title", widget: "string" }
+          - { label: "課程說明", name: "description", widget: "text" }
+          - { label: "適合對象", name: "audience", widget: "string" }
+          - { label: "程度", name: "level", widget: "string" }
+          - { label: "上課時間", name: "schedule", widget: "string" }
+          - { label: "費用說明", name: "price", widget: "string" }
+      - label: "素描速寫"
+        name: "sketch"
+        file: "_data/course_sketch.yml"
+        fields:
+          - { label: "課程名稱", name: "title", widget: "string" }
+          - { label: "課程說明", name: "description", widget: "text" }
+          - { label: "適合對象", name: "audience", widget: "string" }
+          - { label: "程度", name: "level", widget: "string" }
+          - { label: "上課時間", name: "schedule", widget: "string" }
+          - { label: "費用說明", name: "price", widget: "string" }
+      - label: "兒童美術"
+        name: "kids"
+        file: "_data/course_kids.yml"
+        fields:
+          - { label: "課程名稱", name: "title", widget: "string" }
+          - { label: "課程說明", name: "description", widget: "text" }
+          - { label: "適合對象", name: "audience", widget: "string" }
+          - { label: "程度", name: "level", widget: "string" }
+          - { label: "上課時間", name: "schedule", widget: "string" }
+          - { label: "費用說明", name: "price", widget: "string" }
+      - label: "成人英語"
+        name: "english"
+        file: "_data/course_english.yml"
+        fields:
+          - { label: "課程名稱", name: "title", widget: "string" }
+          - { label: "課程說明", name: "description", widget: "text" }
+          - { label: "適合對象", name: "audience", widget: "string" }
+          - { label: "上課時間", name: "schedule", widget: "string" }
+          - { label: "費用說明", name: "price", widget: "string" }
+
+  # ── 基本資料 ──
+  - name: "settings"
+    label: "畫室基本資料"
+    files:
+      - label: "聯絡資訊"
+        name: "contact"
+        file: "_data/contact.yml"
+        fields:
+          - { label: "地址", name: "address", widget: "string" }
+          - { label: "LINE ID", name: "line", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "電話", name: "phone", widget: "string", required: false }
+          - label: "開放時間"
+            name: "hours"
+            widget: "list"
+            fields:
+              - { label: "日期", name: "days", widget: "string" }
+              - { label: "時間", name: "time", widget: "string" }
+
+  # ── 作品集 ──
+  - name: "portfolio"
+    label: "作品集"
+    folder: "_portfolio"
+    create: true
+    fields:
+      - { label: "作品名稱", name: "title", widget: "string" }
+      - label: "分類"
+        name: "category"
+        widget: "select"
+        options:
+          - { label: "水彩", value: "watercolor" }
+          - { label: "油畫", value: "oil" }
+          - { label: "素描速寫", value: "sketch" }
+          - { label: "兒童美術", value: "kids" }
+      - { label: "作品圖片", name: "image", widget: "image" }
+      - { label: "學員姓名（選填）", name: "student", widget: "string", required: false }
+      - { label: "備註", name: "note", widget: "string", required: false }
