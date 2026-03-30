@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: alexuiui/peace-studios
+  repo: alexuiui/PS-web-Proto-v0.1
   branch: main
 
 media_folder: "images/uploads"
