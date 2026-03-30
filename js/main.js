@@ -14,8 +14,8 @@ document.querySelectorAll('.mobile-menu a').forEach(a => {
   a.addEventListener('click', () => mobileMenu.classList.remove('open'));
 });
 
-// ── PAGE ROUTING ──
-function showPage(id) {
+// ── PAGE ROUTING ── (with browser history)
+function showPage(id, pushState = true) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   const target = document.getElementById('page-' + id);
   if (target) {
@@ -25,9 +25,18 @@ function showPage(id) {
   document.querySelectorAll('[data-page]').forEach(a => {
     a.classList.toggle('active', a.dataset.page === id);
   });
-  // reinit reveals
+  if (pushState) {
+    const url = id === 'home' ? '/' : '/#' + id;
+    history.pushState({ page: id }, '', url);
+  }
   setTimeout(initReveal, 100);
 }
+
+// ── HANDLE BACK / FORWARD BUTTONS ──
+window.addEventListener('popstate', (e) => {
+  const page = e.state?.page || 'home';
+  showPage(page, false);
+});
 
 document.querySelectorAll('[data-page]').forEach(a => {
   a.addEventListener('click', e => {
@@ -85,8 +94,10 @@ if (contactForm) {
   });
 }
 
-// ── INIT ──
+// ── INIT ── read page from URL hash on load
 window.addEventListener('DOMContentLoaded', () => {
-  showPage('home');
-  initReveal();
+  const hash = window.location.hash.replace('#', '');
+  const startPage = hash || 'home';
+  showPage(startPage, false);
+  history.replaceState({ page: startPage }, '', window.location.href);
 });
